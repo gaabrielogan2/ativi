@@ -1,21 +1,4 @@
-name: Teste
-on:
-  push:
-
-jobs:
-  cypress-run:
-    runs-on: ubuntu-22.04
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Run tests 💻
-        uses: cypress-io/github-action@v2
-        with:
-          command: npm test
-
-  name: End-to-end tests 🧪
+name: End-to-end tests 
 
 on:
   push:
@@ -28,13 +11,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Run tests 💻
+      - name: Run tests 
         uses: cypress-io/github-action@v2
         with:
           command: npm test
 
       - name: Publish report
-           uses: peaceiris/actions-gh-pages@v3
-                with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./mochawesome-report
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./mochawesome-report
