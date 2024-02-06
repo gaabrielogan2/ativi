@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-01T14:52:04.427Z",
+    "end": "2024-02-01T14:52:09.479Z",
+    "duration": 5052,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7ecb6f4a-3544-457e-831f-664bbfb1b1c0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Login.cy.js",
+      "file": "cypress\\e2e\\Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4bc9ca85-6f10-49a8-8f10-cb44e7186ca4",
+          "title": "Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login para tela de admin",
+              "fullTitle": "Login Login para tela de admin",
+              "timedOut": null,
+              "duration": 4999,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "LoginPage.login(data.usuario, data.senha);\ndashboardPage.siteName.should('be.visible');",
+              "err": {},
+              "uuid": "b109fb60-fd6b-49d3-9a09-8b2aef6558bb",
+              "parentUUID": "4bc9ca85-6f10-49a8-8f10-cb44e7186ca4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b109fb60-fd6b-49d3-9a09-8b2aef6558bb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4999,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
