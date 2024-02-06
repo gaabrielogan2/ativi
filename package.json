@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run",
-    "mocha": "npx cypress run --reporter mochawesome"
+    "test": "npx cypress run --reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
