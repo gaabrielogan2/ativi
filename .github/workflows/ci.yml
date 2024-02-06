@@ -19,5 +19,5 @@ jobs:
       - name: Publish report
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.MY_PAT }}
           publish_dir: ./mochawesome-report
