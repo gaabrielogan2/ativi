@@ -1,5 +1,4 @@
-name: End-to-end tests 🧪
-
+name: Teste
 on:
   push:
 
